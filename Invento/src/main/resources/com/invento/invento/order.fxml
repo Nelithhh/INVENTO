@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="559.0" prefWidth="765.0" style="-fx-background-color: #202020;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.invento.invento.OrderController">
+   <children>
+      <TabPane layoutX="20.0" layoutY="68.0" prefHeight="467.0" prefWidth="722.0" stylesheets="@CSS/style.css" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Orders">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ScrollPane prefHeight="439.0" prefWidth="722.0" stylesheets="@CSS/style.css">
+                           <content>
+                              <TableView fx:id="tblCustomerOrder" prefHeight="440.0" prefWidth="850.0" stylesheets="@CSS/style.css">
+                                <columns>
+                                  <TableColumn fx:id="clmCusContact" prefWidth="121.59999924898148" text="Customer Contact" />
+                                  <TableColumn fx:id="clmProCode" prefWidth="110.39996337890625" text="Product Code" />
+                                    <TableColumn fx:id="clmDate" prefWidth="79.99996948242188" text="Date" />
+                                    <TableColumn fx:id="clmTime" prefWidth="75.0" text="Time" />
+                                    <TableColumn fx:id="clmQuantity" prefWidth="75.0" text="Quantity" />
+                                    <TableColumn fx:id="clmProPrice" prefWidth="99.99996948242188" text="price" />
+                                    <TableColumn fx:id="clmOrderPrice" prefWidth="110.4000244140625" text="Total" />
+                                    <TableColumn fx:id="clmCusName" prefWidth="86.39990234375" text="Customer Name" />
+                                    <TableColumn fx:id="clmProName" prefWidth="97.60009765625" text="Product Name" />
+                                </columns>
+                                 <styleClass>
+                                    <String fx:value="table-row-cell" />
+                                    <String fx:value="table-view" />
+                                 </styleClass>
+                              </TableView>
+                           </content>
+                        </ScrollPane>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Order By Day">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ScrollPane prefHeight="439.0" prefWidth="722.0" stylesheets="@CSS/style.css">
+                           <content>
+                              <TableView fx:id="tblDailyOrderSummary" prefHeight="440.0" prefWidth="722.0" stylesheets="@CSS/style.css">
+                                 <columns>
+                                    <TableColumn fx:id="clmDailyorderDate" prefWidth="228.79997903108597" text="Date" />
+                                    <TableColumn fx:id="clmDailyOrderNumber" prefWidth="252.00001525878906" text="number of orders" />
+                                    <TableColumn fx:id="clmDailyOrderEarnings" prefWidth="228.80007934570312" text="Earnings" />
+                                 </columns>
+                                 <styleClass>
+                                    <String fx:value="table-row-cell" />
+                                    <String fx:value="table-view" />
+                                 </styleClass>
+                              </TableView>
+                           </content>
+                        </ScrollPane>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Order By Month">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ScrollPane prefHeight="439.0" prefWidth="722.0" stylesheets="@CSS/style.css">
+                           <content>
+                              <TableView fx:id="tblMonthlySummary" prefHeight="440.0" prefWidth="722.0" stylesheets="@CSS/style.css">
+                                 <columns>
+                                    <TableColumn fx:id="clmMonthlyMonth" prefWidth="228.79997903108597" text="Month" />
+                                    <TableColumn fx:id="clmMonthlyOrders" prefWidth="252.00001525878906" text="number of orders" />
+                                    <TableColumn fx:id="clmMonthlyEarnings" prefWidth="228.80007934570312" text="Earnings" />
+                                 </columns>
+                                 <styleClass>
+                                    <String fx:value="table-row-cell" />
+                                    <String fx:value="table-view" />
+                                 </styleClass>
+                              </TableView>
+                           </content>
+                        </ScrollPane>
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Order by Year">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ScrollPane prefHeight="439.0" prefWidth="722.0" stylesheets="@CSS/style.css">
+                           <content>
+                              <TableView fx:id="tblYearlySummary" prefHeight="440.0" prefWidth="722.0" stylesheets="@CSS/style.css">
+                                 <columns>
+                                    <TableColumn fx:id="clmYearlyYear" prefWidth="228.79997903108597" text="Year" />
+                                    <TableColumn fx:id="clmYearlyOrders" prefWidth="252.00001525878906" text="number of orders" />
+                                    <TableColumn fx:id="clmYearlyEarnings" prefWidth="228.80007934570312" text="Earnings" />
+                                 </columns>
+                                 <styleClass>
+                                    <String fx:value="table-row-cell" />
+                                    <String fx:value="table-view" />
+                                 </styleClass>
+                              </TableView>
+                           </content>
+                        </ScrollPane>
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <Button layoutX="672.0" layoutY="18.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="62.0" style="-fx-background-color: #ED1A0D;" styleClass="button2" stylesheets="@CSS/style.css">
+         <graphic>
+            <ImageView fitHeight="31.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/fluent_delete-20-filled.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>
