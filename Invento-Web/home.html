@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invento</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <link rel="stylesheet" href="Css/main.css">
+    <link rel="stylesheet" href="Css/hero.css">
+    <link rel="stylesheet" href="Css/vectorRes.css">
+
+
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="Images/INVENTO.png" alt="Logo">
+        </div>
+        <div class="menu">
+            <ul>
+                <li>Home</li>
+                <li>Download</li>
+                <li>About Us</li>
+            </ul>
+        </div>
+        <a href="login.html"><div class="sign-up">
+            <span>Sign Up</span>
+            <img src="Images/signup.png" alt="sign-up-icon">
+        </div></a>
+    </nav>
+
+    <div class="hero-section">
+        <div class="container">
+            <div class="hero-text">
+                <h1>Elevate Your Productivity<br>
+                    seamless download journey of INVENTO IMS</h1>
+
+                <p>The seamless download experience ensures swift integration, allowing you to harness the power of Invento in no time. Take control of your inventory management and propel your productivity to unprecedented levels with Invento. Elevate your business game – download Invento now!</p>
+            </div>
+            <a href=""><div class="button">
+                <span>Downlaod</span>
+                <img src="images/download.png">
+            </div></a>
+            <div class="images">
+                <div class="main" style="background-image: url('hero.png');">
+
+                </div>
+               
+            </div>
+            <div class="vector">
+                <img class="bell" src="Images/bell.png">
+                <img class="bill"src="Images/bill.png">
+                <img class="box" src="Images/flyingbox.png">
+                <img class="coin" src="Images/magecoin.png">
+                <img class="coins" src="Images/floatingcoins.png">
+                <div class="star">
+                    <img src="Images/star.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        TweenMax.staggerFrom(".main",1.5,{
+            delay:2.0,
+            opacity:0,
+            y:"30",
+            ease:Sine.easeOut,
+            
+        },0.02);
+
+        TweenMax.staggerFrom(".sign-up",1.5,{
+            delay:0.1,
+            opacity:0,
+            x:"-100%",
+            ease:Expo.easeInOut,
+            
+        },0.02);
+
+        TweenMax.staggerFrom(".menu",1.5,{
+            delay:0.4,
+            opacity:0,
+            x:"-100%",
+            ease:Expo.easeInOut,
+            
+        },0.02);
+
+        TweenMax.staggerFrom(".logo",1.5,{
+            delay:0.6,
+            opacity:0,
+            x:"-100%",
+            ease:Expo.easeInOut,
+            
+        },0.02);
+
+       
+        TweenMax.staggerFrom(".box",1.5,{
+            delay:3,
+            opacity:0,
+            y:"100%",
+            ease:Expo.easeInOut,
+            
+        },0.02);
+
+        TweenMax.staggerFrom(".bell",1.5,{
+            delay:3,
+            opacity:0,
+            y:"100%",
+            ease:Expo.easeInOut,
+            
+        },0.02);
+
+        TweenMax.staggerFrom(".coin",1.5,{
+            delay:3.5,
+            opacity:0,
+            y:"100%",
+            ease:Expo.easeInOut,
+            
+        },0.02);
+
+        TweenMax.staggerFrom(".bill",1.5,{
+            delay:3.5,
+            opacity:0,
+            y:"100%",
+            ease:Expo.easeInOut,
+            
+        },0.02);
+
+        TweenMax.staggerFrom(".coins",1.5,{
+            delay:4,
+            opacity:0,
+            y:"100%",
+            ease:Expo.easeInOut,
+            
+        },0.02);
+
+        TweenMax.staggerFrom(".star",1.5,{
+            delay:4,
+            opacity:0,
+            y:"100%",
+            ease:Expo.easeInOut,
+            
+        },0.02);
+    </script>
+</body>
+</html>

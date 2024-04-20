@@ -1,0 +1,169 @@
+:root{
+    --bg-color:#2F2E2E;
+    --main-color:#2453FE;
+    --btn-gray:#484747;
+    --text-box:#A09B9B; 
+    --light-white:rgb(235, 233, 233);
+}
+.container{
+  
+}
+.hero-section{
+    
+    justify-content: center;
+}
+.hero-text{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+   
+}
+.hero-section h1{
+    font-size: 54px;
+    margin-bottom: 20px;
+}
+.hero-text p{
+    font-size:16px;
+    font-weight: 200;
+    display: flex;
+    color:var(--light-white);
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+}
+.button{
+    cursor: pointer;
+    margin-top: 30px;
+    width: 230px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:10px 0px;
+    background-color: #2453FE;
+    border-radius: 32px;
+}
+.button span{
+    padding-right:10px;
+    font-weight: 500;
+}
+.button img{
+    position: relative;
+    left: 10px;
+    width: 45px;
+    height: 45px;
+}
+.images{
+    margin-top: 50px;
+}
+.images .main{
+    border-radius: 20px;
+    width: 800px;
+    height: 400px;
+    background-image: url('hero.png'); /* Replace with the path to your image */
+    background-size: cover; /* You can use 'contain' or other values based on your requirements */
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.vector{
+    position: relative;
+    z-index: 999;
+}
+
+.vector .box{
+    position: relative;
+    width:204px;
+    height: 204px;
+    top:-230px;
+    right:500px;
+}
+
+.vector .coin{
+    position: relative;
+    width:52px;
+    height: 145px;
+    top:-500px;
+    right:750px;
+}
+
+.vector .coins{
+    position: relative;
+    width:129px;
+    height: 129px;
+    top:-560px;
+    right:610px;
+}
+.vector .bill{
+    position: relative;
+    
+    width:175px;
+    height: 159px;
+    top:-210px;
+    left:540px;
+}
+.vector .bell{
+    position: relative;
+    
+    width:110px;
+    height: 110px;
+    top:-400px;
+    left:800px;
+}
+
+.vector .star img{
+    position: relative;
+    
+    width:150px;
+    height: auto;
+    top:-695px;
+    left:410px;
+}
+@media only screen and (max-width: 1150px) {
+    .vector .bell{
+        left: 750px;
+    }
+    .vector .coin{
+        width:52px;
+        height: 145px;
+        top:-500px;
+        right:680px;
+    }
+    .images .main{
+       
+        width: 700px;
+        height: 350px;
+        
+    }
+ 
+    .vector .box{
+      
+        width:154px;
+        height: 154px;
+        top:-230px;
+        right:400px;
+    }
+    .vector .coins{
+        
+        width:129px;
+        height: 129px;
+        top:-560px;
+        right:610px;
+    }
+    .vector .bill{
+    
+        width:175px;
+        height: 159px;
+        top:-210px;
+        left:540px;
+    }
+
+    .vector .star img{
+        
+        width:150px;
+        height: auto;
+        top:-695px;
+        left:410px;
+    }
+}
