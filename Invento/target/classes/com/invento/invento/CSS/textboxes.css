@@ -1,0 +1,33 @@
+.text-box {
+    -fx-background-color: transparent;
+    -fx-border-radius: 50px; /* Set the desired border radius */
+    -fx-border-color: #ffff; /* Set the border color */
+    -fx-border-width: 1px; /* Set the border width */
+    -fx-font-family: Roboto;
+    -fx-padding: 0px 15px;
+    -fx-text-fill: #ffff;
+    -fx-pref-width:224.12px ;
+    -fx-pref-height: 33.23;
+}
+
+.search-box{
+    -fx-background-radius: 10;
+    -fx-background-color: #404040;
+    -fx-text-fill: white;
+    -fx-pref-width:224 ;
+    -fx-pref-height: 33;
+}
+
+.text-box-2{
+    -fx-background-color: transparent;
+    -fx-border-radius: 50px; /* Set the desired border radius */
+    -fx-border-color: #ffff; /* Set the border color */
+    -fx-border-width: 1px; /* Set the border width */
+    -fx-font-family: Roboto;
+    -fx-padding: 0px 15px;
+    -fx-text-fill: #ffff;
+    -fx-pref-width:369.73px ;
+    -fx-pref-height: 52.82px;
+}
+
+
